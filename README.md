@@ -1,4 +1,4 @@
-﻿# GerritePython
+# GerritePython
 
     1. 使用gerrit API 抓取数据 
     2. 存储在MongoDB
@@ -36,26 +36,26 @@ https://review.openstack.org/Documentation/rest-api.html
 - >who 提交了多少行代码 每月 文件类型（.html .js .ts)
 - >MR 提交的类型 根据提交的commit message 信息来区分
 
-    - 包含 NF 代表是new feature
+    - 包含 NF 代表是new feature
     - BUG 代码修改的bug
 
 ### 给了多少Comment, 
-- who 日期
+- who 日期
     - who 给累最多的comment
 - comment 内容是什么 类型 来自什么文件
 
 ### Review了多少代码，
 －reviewer 
 ### 平均Comment时间等
-### 平均提交的速度 多久才能提交到master
+### 平均提交的速度 多久才能提交到master
 - 一个mr 从产生到提交 需要经过多久 天/周 
 ## 也能搞个预警，例如几小时之内，没有Comment等
 ### 等待comment
-- >代码提交 && verify＋1 && 包含reviewer && 无review记录
+- >代码提交 && verify＋1 && 包含reviewer && 无review记录
 - >正常工作日：提交时间 绿色(<12h) 黄色告警(>12h) 橙色(<24h) 红色告警(>3*24h)
 
-    - 提醒到reviewer  代码ok **verify +1**
-    - 提醒到committer 代码异常 **verify -1**
+    - 提醒到reviewer  代码ok **verify +1**
+    - 提醒到committer 代码异常 **verify -1**
 >python 使用xmpppy模块向 Jabber 发送消息 或者jabber.py
 ### 已经给了comment 需要committer 修改
 - > \>7*24h 红色告警  提醒到 committer
@@ -64,7 +64,7 @@ https://review.openstack.org/Documentation/rest-api.html
 
 至于对那些收到的数据做什么二次开发，就看我们怎么做了
 ### 目前mr的状态
-- 饼状图 呈现 status 列表
+- 饼状图 呈现 status 列表
 ### 代码优化
 我们开发过程中是不断的增加代码 有时候为了赶进度，就忽略了代码质量等
 
